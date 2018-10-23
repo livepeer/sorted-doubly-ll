@@ -12,7 +12,7 @@ contract TestSortedDoublyLLFindNoHints {
 
     function beforeEach() public {
         fixture = new PublicSortedDoublyLL();
-        fixture.setMaxSize(10);
+        fixture.initialize(this, 10);
     }
 
     function test_insert_findNoHintUpdateHead() public {
