@@ -1,0 +1,19 @@
+{
+  "contracts": {
+    "PublicSortedDoublyLL": {
+      "address": "0xca61941f96019c1a994b1b250504c610fe6bf3d3",
+      "constructorCode": "608060405234801561001057600080fd5b5061132d806100206000396000f300",
+      "bodyBytecodeHash": "fce5a7e96923d1ab107ff82c4915e0bd6a92c6382202b7839d92c5c63cd85bd8",
+      "bytecodeHash": "987e015e76cce692f5fc7e6e79ab5b7a5be8a8632796cda8d622c9a6409c45ad"
+    }
+  },
+  "lib": true,
+  "frozen": false,
+  "package": {
+    "address": "0xd8cbce4cf22bf3257f3008d47a5aa319b2b095a8"
+  },
+  "provider": {
+    "address": "0x128c8fbcd7b8f971e352170a9a0b3553c56ab277"
+  },
+  "version": "0.1.0"
+}

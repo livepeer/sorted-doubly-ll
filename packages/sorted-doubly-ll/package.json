@@ -12,5 +12,8 @@
   "dependencies": {
     "openzeppelin-solidity": "^2.0.0",
     "zos-lib": "^2.0.0-alpha.9"
+  },
+  "devDependencies": {
+    "truffle-keystore-provider": "^1.0.2"
   }
 }
