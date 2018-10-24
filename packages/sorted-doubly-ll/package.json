@@ -1,14 +1,36 @@
 {
   "name": "sorted-doubly-ll",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "EVM package for a sorted doubly linked list",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "build",
+    "contracts",
+    "test",
+    "zos.json",
+    "zos.*.json"
+  ],
+  "keywords": [
+    "zeppelinos",
+    "ethereum",
+    "smartcontracts",
+    "solidity",
+    "upgradeability",
+    "security",
+    "proxy",
+    "evm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livepeer/sorted-doubly-ll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/livepeer/sorted-doubly-ll/issues"
+  },
+  "homepage": "https://github.com/livepeer/sorted-doubly-ll/packages/sorted-doubly-ll#readme",
+  "license": "MIT",
   "dependencies": {
     "openzeppelin-solidity": "^2.0.0",
     "zos-lib": "^2.0.0-alpha.9"
