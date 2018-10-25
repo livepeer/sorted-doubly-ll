@@ -7,3 +7,9 @@
 ```sh
 npm install sorted-doubly-ll
 ```
+
+## Testing
+
+```sh
+npm run test
+```
