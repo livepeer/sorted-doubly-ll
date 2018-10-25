@@ -36,6 +36,7 @@ module.exports = {
         return createProvider(process.env.RINKEBY_ACCOUNT, process.env.DATA_DIR, "https://rinkeby.infura.io", process.READ_ONLY)
       },
       network_id: 4,
+      gasPrice: 10e9,
       gas: 8000000
     },
     kovan: {
@@ -43,6 +44,7 @@ module.exports = {
         return createProvider(process.env.KOVAN_ACCOUNT, process.env.DATA_DIR, "https://kovan.infura.io", process.READ_ONLY)
       },
       network_id: 42,
+      gasPrice: 10e9,
       gas: 8000000
     }
   },

@@ -1,6 +1,6 @@
 {
   "name": "sorted-doubly-ll",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "EVM package for a sorted doubly linked list",
   "scripts": {
     "test": "truffle test"

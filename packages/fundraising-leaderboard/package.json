@@ -1,0 +1,15 @@
+{
+  "name": "fundraising-leaderboard",
+  "version": "1.0.0",
+  "description": "Example contract using a sorted doubly linked list EVM package",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "openzeppelin-solidity": "^1.10.0",
+    "sorted-doubly-ll": "^1.0.3",
+    "zos-lib": "^2.0.0-alpha.9"
+  }
+}

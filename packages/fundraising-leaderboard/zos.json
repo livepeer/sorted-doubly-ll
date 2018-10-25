@@ -1,0 +1,11 @@
+{
+  "zosversion": "2",
+  "name": "fundraising-leaderboard",
+  "version": "0.1.0",
+  "contracts": {
+    "FundraisingLeaderboard": "FundraisingLeaderboard"
+  },
+  "dependencies": {
+    "sorted-doubly-ll": "^1.0.3"
+  }
+}

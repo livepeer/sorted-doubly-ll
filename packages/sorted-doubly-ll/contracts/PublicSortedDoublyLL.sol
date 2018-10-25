@@ -7,7 +7,7 @@ import "./SortedDoublyLL.sol";
 contract PublicSortedDoublyLL is Initializable {
     using SortedDoublyLL for SortedDoublyLL.Data;
 
-    SortedDoublyLL.Data list;
+    SortedDoublyLL.Data internal list;
     address public updater;
 
     modifier onlyUpdater() {
@@ -20,7 +20,7 @@ contract PublicSortedDoublyLL is Initializable {
 
     function initialize(address _updater, uint256 _maxSize) public initializer {
         updater = _updater;
-        setMaxSize(_maxSize);
+        list.setMaxSize(_maxSize);
     }
 
     function setUpdater(address _updater) public onlyUpdater {
