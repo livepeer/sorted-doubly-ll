@@ -10,6 +10,7 @@
   "dependencies": {
     "openzeppelin-solidity": "^1.10.0",
     "sorted-doubly-ll": "^1.0.3",
-    "zos-lib": "^2.0.0-alpha.9"
+    "zos": "^2.0.1",
+    "zos-lib": "^2.0.1"
   }
 }
