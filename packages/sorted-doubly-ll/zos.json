@@ -1,7 +1,7 @@
 {
   "zosversion": "2",
   "name": "sorted-doubly-ll",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "contracts": {
     "PublicSortedDoublyLL": "PublicSortedDoublyLL"
   }

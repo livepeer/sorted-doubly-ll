@@ -1,6 +1,6 @@
 {
   "name": "sorted-doubly-ll",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "EVM package for a sorted doubly linked list",
   "scripts": {
     "test": "truffle test"
@@ -32,8 +32,8 @@
   "homepage": "https://github.com/livepeer/sorted-doubly-ll/packages/sorted-doubly-ll#readme",
   "license": "MIT",
   "dependencies": {
-    "openzeppelin-solidity": "^2.0.0",
-    "zos-lib": "^2.0.0-alpha.9"
+    "openzeppelin-solidity": "^2.1.2",
+    "zos-lib": "^2.1.2"
   },
   "devDependencies": {
     "truffle-keystore-provider": "^1.0.2"

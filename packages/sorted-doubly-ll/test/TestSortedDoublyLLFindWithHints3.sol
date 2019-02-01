@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.0;
 
 import "../contracts/PublicSortedDoublyLL.sol";
 import "truffle/Assert.sol";
@@ -12,7 +12,7 @@ contract TestSortedDoublyLLFindWithHints3 {
 
     function beforeEach() public {
         fixture = new PublicSortedDoublyLL();
-        fixture.initialize(this, 10);
+        fixture.initialize(address(this), 10);
     }
     
     function test_insert_findWithHintNextRemoved() public {

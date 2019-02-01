@@ -1,4 +1,4 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.0;
 
 import "../contracts/PublicSortedDoublyLL.sol";
 import "./RevertProxy.sol";
@@ -18,7 +18,7 @@ contract TestSortedDoublyLLInsert {
 
     function beforeEach() public {
         fixture = new PublicSortedDoublyLL();
-        fixture.initialize(this, 3);
+        fixture.initialize(address(this), 3);
     }
 
     function test_setMaxSize() public {
