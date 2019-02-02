@@ -6,6 +6,6 @@
     "FundraisingLeaderboard": "FundraisingLeaderboard"
   },
   "dependencies": {
-    "sorted-doubly-ll": "^1.0.3"
+    "sorted-doubly-ll": "^1.0.4"
   }
 }

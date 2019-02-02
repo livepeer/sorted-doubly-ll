@@ -1,6 +1,5 @@
-pragma solidity ^0.4.24;
+pragma solidity ^0.5.0;
 
-import "zos-lib/contracts/application/App.sol";
 import "zos-lib/contracts/Initializable.sol";
 import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 import "sorted-doubly-ll/contracts/PublicSortedDoublyLL.sol";
@@ -12,7 +11,7 @@ contract FundraisingLeaderboard is Initializable {
     // Tracks the top contributors
     PublicSortedDoublyLL public leaderboard;
     // Beneficiary address to receive raised funds
-    address public beneficiary;
+    address payable public beneficiary;
     // Flag indicating whether fundraiser has ended
     bool public ended;
 
@@ -32,14 +31,9 @@ contract FundraisingLeaderboard is Initializable {
         _;
     }
 
-    function initialize(address _app, address _beneficiary, uint256 _maxContributors) public initializer {
+    function initialize(address payable _beneficiary, PublicSortedDoublyLL _leaderboard) public initializer {
         beneficiary = _beneficiary;
-        ended = false;
-
-        bytes memory initData = abi.encodeWithSignature("initialize(address,uint256)", address(this), _maxContributors);
-        leaderboard = PublicSortedDoublyLL(
-            App(_app).create("sorted-doubly-ll", "PublicSortedDoublyLL", initData)
-        );
+        leaderboard = _leaderboard;
     }
 
     function contribute(address _prevAddr, address _nextAddr) external payable notEnded {
