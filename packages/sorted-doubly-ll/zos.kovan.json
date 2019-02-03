@@ -1,11 +1,11 @@
 {
   "contracts": {
     "PublicSortedDoublyLL": {
-      "address": "0x18bc4b557f224eb1757abed6b89b7194b14a78f5",
-      "constructorCode": "608060405234801561001057600080fd5b5061132f806100206000396000f300",
-      "bodyBytecodeHash": "8b07963feba71cd058a40ab9fcf9150db13c89165f6b35eca6ffd4a415dff096",
-      "localBytecodeHash": "1c080fd417cde981989756434a17afc46439e09c63014162ad5fd1b0a381111f",
-      "deployedBytecodeHash": "1c080fd417cde981989756434a17afc46439e09c63014162ad5fd1b0a381111f",
+      "address": "0x93475acbeaf7eb5db5670131f2fcc86c19f82c3d",
+      "constructorCode": "608060405234801561001057600080fd5b506113d7806100206000396000f3fe",
+      "bodyBytecodeHash": "3634845217f42692b77f757c17318b10b794fe38131cfcebd68b6e620f185e92",
+      "localBytecodeHash": "370d3d1becdb54ee51403180b613ef38f6e16385bb5d4950d3f5233f1e9143a8",
+      "deployedBytecodeHash": "370d3d1becdb54ee51403180b613ef38f6e16385bb5d4950d3f5233f1e9143a8",
       "types": {
         "t_bool": {
           "id": "t_bool",
@@ -33,31 +33,31 @@
               "label": "head",
               "astId": 237,
               "type": "t_address",
-              "src": "1683:12:1"
+              "src": "1681:12:1"
             },
             {
               "label": "tail",
               "astId": 239,
               "type": "t_address",
-              "src": "1796:12:1"
+              "src": "1794:12:1"
             },
             {
               "label": "maxSize",
               "astId": 241,
               "type": "t_uint256",
-              "src": "1910:15:1"
+              "src": "1908:15:1"
             },
             {
               "label": "size",
               "astId": 243,
               "type": "t_uint256",
-              "src": "1983:12:1"
+              "src": "1981:12:1"
             },
             {
               "label": "nodes",
               "astId": 247,
               "type": "t_mapping<t_struct<SortedDoublyLL.Node>>",
-              "src": "2056:31:1"
+              "src": "2054:31:1"
             }
           ]
         },
@@ -75,19 +75,19 @@
               "label": "key",
               "astId": 230,
               "type": "t_uint256",
-              "src": "1379:11:1"
+              "src": "1377:11:1"
             },
             {
               "label": "nextId",
               "astId": 232,
               "type": "t_address",
-              "src": "1451:14:1"
+              "src": "1449:14:1"
             },
             {
               "label": "prevId",
               "astId": 234,
               "type": "t_address",
-              "src": "1537:14:1"
+              "src": "1535:14:1"
             }
           ]
         },
@@ -105,7 +105,7 @@
           "label": "initialized",
           "astId": 1339,
           "type": "t_bool",
-          "src": "749:24:3"
+          "src": "757:24:3"
         },
         {
           "contract": "Initializable",
@@ -113,7 +113,7 @@
           "label": "initializing",
           "astId": 1341,
           "type": "t_bool",
-          "src": "868:25:3"
+          "src": "876:25:3"
         },
         {
           "contract": "Initializable",
@@ -121,7 +121,7 @@
           "label": "______gap",
           "astId": 1390,
           "type": "t_array:50<t_uint256>",
-          "src": "1883:29:3"
+          "src": "1891:29:3"
         },
         {
           "contract": "PublicSortedDoublyLL",
@@ -129,7 +129,7 @@
           "label": "list",
           "astId": 10,
           "type": "t_struct<SortedDoublyLL.Data>",
-          "src": "209:33:0"
+          "src": "207:33:0"
         },
         {
           "contract": "PublicSortedDoublyLL",
@@ -137,7 +137,7 @@
           "label": "updater",
           "astId": 12,
           "type": "t_address",
-          "src": "248:22:0"
+          "src": "246:22:0"
         }
       ],
       "warnings": {
@@ -152,5 +152,14 @@
   "solidityLibs": {},
   "proxies": {},
   "zosversion": "2",
-  "version": "1.0.3"
+  "version": "1.0.4",
+  "app": {
+    "address": "0x93584bb16f7a2ba6c71d3aa6ad3d42ccd430e71c"
+  },
+  "package": {
+    "address": "0x481c9d0a300e58f6abfcf2bba26f5aa8f0e274ea"
+  },
+  "provider": {
+    "address": "0x67cd3e56bbb105fc21a6ad053aa8d7d1ce5263b7"
+  }
 }

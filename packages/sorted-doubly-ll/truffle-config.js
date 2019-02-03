@@ -46,6 +46,12 @@ module.exports = {
       network_id: 42,
       gasPrice: 10e9,
       gas: 8000000
+    },
+    mainnet: {
+      provider: () => {
+        return createProvider(process.env.MAINNET_ACCOUNT, process.env.DATA_DIR, "https://mainnet.infura.io", process.READ_ONLY)
+      },
+      network_id: 1
     }
   },
   solc: {

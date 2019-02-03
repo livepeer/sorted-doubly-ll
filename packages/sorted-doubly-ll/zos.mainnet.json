@@ -1,7 +1,7 @@
 {
   "contracts": {
     "PublicSortedDoublyLL": {
-      "address": "0x48d980295ebfc99e4b7380545a6ecdf7e7c44279",
+      "address": "0x37594dc38d702ae08c4034e208033e8667e94162",
       "constructorCode": "608060405234801561001057600080fd5b506113d7806100206000396000f3fe",
       "bodyBytecodeHash": "3634845217f42692b77f757c17318b10b794fe38131cfcebd68b6e620f185e92",
       "localBytecodeHash": "370d3d1becdb54ee51403180b613ef38f6e16385bb5d4950d3f5233f1e9143a8",
@@ -154,12 +154,12 @@
   "zosversion": "2",
   "version": "1.0.4",
   "app": {
-    "address": "0xd8d1468df9ce5bb4d78a177d59384025275edcb0"
+    "address": "0x300f094135cec44a6324211b0ccdd88f8dae5e1a"
   },
   "package": {
-    "address": "0x73ee33d8ab14a7ceea92690f36142ab4d8d7a11d"
+    "address": "0x293f514a99e19925e2b701dbf2ddc09332ae2b7e"
   },
   "provider": {
-    "address": "0x370db88e881cb60f2702c1c086fd319b67082057"
+    "address": "0xfe3be9f63531d96ca9f5f9b49db96f1bad024fac"
   }
 }
