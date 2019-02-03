@@ -3,6 +3,8 @@ const PublicSortedDoublyLL = artifacts.require("PublicSortedDoublyLL")
 const RPC = require("./helpers/rpc")
 const { expectRevert } = require("./helpers/expectFail")
 
+const NULL_ADDRESS = "0x0000000000000000000000000000000000000000"
+
 contract("PublicSortedDoublyLL", accounts => {
     let lst
     let rpc
@@ -41,6 +43,8 @@ contract("PublicSortedDoublyLL", accounts => {
 
         it("succeeds if sender is current updater", async () => {
             await lst.setUpdater(accounts[1], { from: accounts[0] })
+
+            assert.equal(await lst.updater.call(), accounts[1])
         })
     })
 
@@ -51,6 +55,8 @@ contract("PublicSortedDoublyLL", accounts => {
 
         it("succeeds if sender is current updater", async () => {
             await lst.setMaxSize(15)
+
+            assert.equal(await lst.getMaxSize(), 15)
         })
     })
 
@@ -61,6 +67,10 @@ contract("PublicSortedDoublyLL", accounts => {
 
         it("succeeds if sender is current updater", async () => {
             await lst.insert(accounts[0], 5, accounts[0], accounts[0])
+
+            assert.equal(await lst.getSize(), 1)
+            assert.equal(await lst.getFirst(), accounts[0])
+            assert.equal(await lst.getKey(accounts[0]), 5)
         })
     })
 
@@ -72,7 +82,16 @@ contract("PublicSortedDoublyLL", accounts => {
 
         it("succeeds if sender is current updater", async () => {
             await lst.insert(accounts[0], 5, accounts[0], accounts[0])
+            
+            assert.equal(await lst.getSize(), 1)
+            assert.equal(await lst.getFirst(), accounts[0])
+            assert.equal(await lst.getKey(accounts[0]), 5)
+
             await lst.remove(accounts[0])
+
+            assert.equal(await lst.getSize(), 0)
+            assert.equal(await lst.getFirst(), NULL_ADDRESS)
+            assert.equal((await lst.getKey(accounts[0])).toString(), "0")
         })
     })
 
@@ -84,7 +103,15 @@ contract("PublicSortedDoublyLL", accounts => {
 
         it("succeeds if sender is current updater", async () => {
             await lst.insert(accounts[0], 5, accounts[0], accounts[0])
+
+            assert.equal(await lst.getSize(), 1)
+            assert.equal(await lst.getFirst(), accounts[0])
+            assert.equal(await lst.getKey(accounts[0]), 5)
+
             await lst.updateKey(accounts[0], 7, accounts[0], accounts[0])
+
+            assert.equal(await lst.getFirst(), accounts[0])
+            assert.equal(await lst.getKey(accounts[0]), 7)
         })
     })
 })
